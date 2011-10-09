@@ -1,0 +1,79 @@
+nav{
+    background:#555;
+}
+
+#nav-container
+{
+    display:inline-block;
+    white-space:nowrap;
+    overflow:hidden;
+    width:353px;
+    height:49px;
+}
+
+.button,div#top div
+{
+    background:green;
+    border:5px solid purple;
+    min-width:85px;
+    margin:10px;
+    display:inline-block;
+    text-align:center;
+}
+
+ul li
+{
+    list-style: none;
+}
+ul div
+{
+    display:inline-block;
+    background:pink;
+
+}
+
+#main > .button{ /*why is this needed to keep the nav bar from expanding in height? */
+float:left;
+}
+
+#main,#top,#mind,#body,#spirit
+{
+    display:inline-block;
+    position:relative;
+}
+
+#mind,#body,#spirit
+{
+    display:none;
+}
+#nav-container .active
+{
+    display:inline-block;
+}
+
+#mind,
+#body,
+#spirit
+{
+    display:none;
+}
+
+#mind
+{
+    background:red;
+}
+
+#body
+{
+    background:yellow;
+}
+
+#spirit
+{
+    background:blue;
+}
+
+.sub
+{
+    display:hide;
+}
