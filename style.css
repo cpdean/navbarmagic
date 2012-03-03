@@ -1,0 +1,30 @@
+#prototype{
+  border:2px solid green;
+  display:inline-block;
+}
+#one,
+#two {
+  display:none;
+}
+
+#oneLink,
+#one {
+  background:blue;
+}
+
+#twoLink,
+#two {
+  background:red;
+}
+
+ul {
+  padding:0px;
+  display:inline-block;
+}
+
+li {
+  background:gray;
+  color:white;
+  padding:4px;
+  display:inline-block;
+}
