@@ -16,7 +16,8 @@ $(document).ready(function(){
   });
 
   $(".back").click(function(){
-    $(this).parent("ul").hide();
+    var xEntry = $("#top").offset().left + $("#top").width();
+    $(this).parent("ul").animate({left:xEntry});
   });
 
   // set to fixed width
