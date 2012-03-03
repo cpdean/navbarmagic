@@ -1,23 +1,37 @@
 $(document).ready(function(){
+  $.fn.extend({
+    menuIn: function(){
+              var obj = $(this);
+              var root = $("#top");
+              
+              obj.show().width(root.width());
+              var y = root.offset().top;
+              var xEntry = root.offset().left + root.width();
+              var x = root.offset().left;
+
+              obj.offset({top:y,left:xEntry});
+              obj.animate({left:0});
+
+            },
+    menuOut: function(){
+              var obj = $(this);
+              var root = $("#top");
+              var xEntry = root.offset().left + root.width();
+              obj.animate({left:xEntry});
+            }
+  });
 
   $("#oneLink").click(function(){
-    $("#one").show();
+    $("#one").menuIn();
 
-    var y = $("#top").offset().top;
-    var xEntry = $("#top").offset().left + $("#top").width();
-    var x = $("#top").offset().left;
-
-    $("#one").offset({top:y,left:xEntry});
-    $("#one").animate({left:0});
   });
 
   $("#twoLink").click(function(){
-    $("#two").show();
+    $("#two").menuIn();
   });
 
   $(".back").click(function(){
-    var xEntry = $("#top").offset().left + $("#top").width();
-    $(this).parent("ul").animate({left:xEntry});
+    $(this).parent("ul").menuOut();
   });
 
   // set to fixed width
