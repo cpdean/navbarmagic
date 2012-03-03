@@ -5,33 +5,42 @@
   font-size: 2em;
 }
 
-#one,
-#two {
-  display:none;
+li {
+  border:1px solid transparent;
 }
 
-#oneLink,
-#one {
-  background:blue;
+li:hover {
+  border: 1px solid black;
 }
 
-#twoLink,
-#two {
-  background:red;
-}
-
-ul {
+#prototype ul {
   padding:0px;
   display:inline-block;
 }
 
-li {
+ul#one,
+ul#two {
+  display:none;
+}
+
+#prototype li#oneLink,
+#one {
+  background:blue;
+}
+
+#prototype li#twoLink,
+#two {
+  background:red;
+}
+
+
+#prototype li {
   background:gray;
   color:white;
   padding:4px;
   display:inline-block;
   cursor:pointer;
 }
-li:hover {
+#prototype li:hover {
   box-shadow:0px 0px 4px 4px yellow;
 }
