@@ -1,7 +1,9 @@
 #prototype{
   border:2px solid green;
   display:inline-block;
+  overflow:hidden;
 }
+
 #one,
 #two {
   display:none;
